@@ -32,6 +32,11 @@
       letter-spacing: -0.02em;
     }
 
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
     .subtitle {
       color: var(--muted);
       margin-top: 6px;
@@ -84,21 +89,6 @@
       font-size: 0.95em;
     }
 
-    .tags {
-      margin-top: 6px;
-      font-size: 0.92em;
-      color: var(--muted);
-    }
-
-    .pill {
-      display: inline-block;
-      padding: 2px 8px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      margin-right: 6px;
-      background: white;
-    }
-
     footer {
       margin-top: 60px;
       font-size: 0.9em;
@@ -108,19 +98,6 @@
 
     a {
       color: var(--link);
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 8px;
-    }
-
-    @media (min-width: 720px) {
-      .two-col {
-        grid-template-columns: 1fr 1fr;
-        gap: 28px;
-      }
     }
   </style>
 </head>
@@ -137,11 +114,10 @@
     <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
-      <a href="#papers-math">Math papers</a>
-      <a href="#papers-interdisciplinary">Interdisciplinary papers</a>
+      <a href="#papers">Papers</a>
       <a href="#teaching">Teaching</a>
-      <a href="#workshops">Workshops &amp; schools</a>
-      <a href="#activities">Other activities</a>
+      <a href="#workshops">Workshops &amp; Schools</a>
+      <a href="#activities">Other Activities</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -153,9 +129,6 @@
       I am a fourth-year undergraduate student double majoring in Mathematics and Computer Science at Colgate University.
       My research interests include combinatorics, logic, and experimental mathematics.
     </p>
-    <p class="meta">
-      (You can optionally add: advisor(s), expected graduation date, or a short “current projects” sentence here.)
-    </p>
   </section>
 
   <section id="research">
@@ -163,124 +136,86 @@
     <ul>
       <li>
         <span class="item-title">Title of Paper or Project</span><br>
-        Short description (problem, methods, data, or main result).<br>
-        <span class="meta">Advisor/Collaborators (optional) · Year</span>
-        <div class="tags">
-          <span class="pill">combinatorics</span>
-          <span class="pill">logic</span>
-          <span class="pill">experimental</span>
-        </div>
+        Short description of the problem, methods, or main results.<br>
+        <span class="meta">Advisor / collaborators · Year</span>
       </li>
       <li>
         <span class="item-title">Another Project</span><br>
-        Working paper / in progress (one-sentence summary).<br>
-        <span class="meta">Advisor/Collaborators (optional) · Year</span>
+        Working paper or in progress.<br>
+        <span class="meta">Advisor / collaborators · Year</span>
       </li>
     </ul>
   </section>
 
-  <section id="papers-math">
-    <h2>Math papers</h2>
-    <p class="meta">Preprints, publications, and expository notes in mathematics.</p>
+  <section id="papers">
+    <h2>Papers</h2>
+
+    <h3>Mathematics</h3>
     <ul>
       <li>
         <span class="item-title">Paper title (authors)</span><br>
-        <span class="meta">Journal/venue (or “Preprint”), year.</span><br>
-        Links:
-        <a href="#" title="Replace with link">PDF</a> ·
-        <a href="#" title="Replace with link">arXiv</a> ·
-        <a href="#" title="Replace with link">Code</a>
+        <span class="meta">Journal or preprint, year.</span><br>
+        <a href="#">PDF</a> · <a href="#">arXiv</a> · <a href="#">Code</a>
       </li>
       <li>
         <span class="item-title">Expository note title (authors)</span><br>
-        <span class="meta">Course/reading group note, year.</span><br>
-        Links:
-        <a href="#" title="Replace with link">PDF</a>
+        <span class="meta">Course or reading group note, year.</span><br>
+        <a href="#">PDF</a>
       </li>
     </ul>
-  </section>
 
-  <section id="papers-interdisciplinary">
-    <h2>Interdisciplinary papers</h2>
-    <p class="meta">Work connecting math/CS with other fields (e.g., biology, physics, social science, humanities).</p>
+    <h3>Interdisciplinary</h3>
     <ul>
       <li>
         <span class="item-title">Paper title (authors)</span><br>
         <span class="meta">Venue, year.</span><br>
-        Links:
-        <a href="#" title="Replace with link">PDF</a> ·
-        <a href="#" title="Replace with link">Project page</a> ·
-        <a href="#" title="Replace with link">Data/Code</a>
+        <a href="#">PDF</a> · <a href="#">Project page</a> · <a href="#">Data / Code</a>
       </li>
     </ul>
   </section>
 
   <section id="teaching">
     <h2>Teaching</h2>
-    <div class="two-col">
-      <div>
-        <h3>Teaching experience</h3>
-        <ul>
-          <li>
-            <span class="item-title">Course title</span><br>
-            <span class="meta">Role (TA / tutor / instructor) · Term</span><br>
-            Brief note (topics covered, responsibilities, etc.).
-          </li>
-          <li>
-            <span class="item-title">Course title</span><br>
-            <span class="meta">Role · Term</span>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h3>Mentoring &amp; support</h3>
-        <ul>
-          <li>
-            <span class="item-title">Peer tutoring / help sessions</span><br>
-            <span class="meta">Department/program · Years</span>
-          </li>
-          <li>
-            <span class="item-title">Mentored project</span><br>
-            <span class="meta">Student group/program · Year</span>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <ul>
+      <li>
+        <span class="item-title">Course title</span><br>
+        <span class="meta">Role (TA / tutor / instructor) · Term</span>
+      </li>
+      <li>
+        <span class="item-title">Course title</span><br>
+        <span class="meta">Role · Term</span>
+      </li>
+    </ul>
   </section>
 
   <section id="workshops">
-    <h2>Workshops &amp; schools</h2>
+    <h2>Workshops &amp; Schools</h2>
     <ul>
       <li>
-        <span class="item-title">Workshop / Summer school name</span><br>
-        <span class="meta">Institution/location · Month Year</span><br>
-        Topic focus (e.g., algebraic combinatorics, formal methods, computational experiments).
+        <span class="item-title">Workshop or summer school name</span><br>
+        <span class="meta">Institution / location · Month Year</span>
       </li>
       <li>
-        <span class="item-title">Conference / Seminar series</span><br>
+        <span class="item-title">Conference or seminar series</span><br>
         <span class="meta">Location · Month Year</span>
       </li>
     </ul>
   </section>
 
   <section id="activities">
-    <h2>Other activities</h2>
+    <h2>Other Activities</h2>
     <ul>
       <li>
-        <span class="item-title">Reading group / seminar</span><br>
-        <span class="meta">Organizer/participant · Year(s)</span>
+        <span class="item-title">Reading group or seminar</span><br>
+        <span class="meta">Organizer or participant · Year(s)</span>
       </li>
       <li>
-        <span class="item-title">Programming / open-source</span><br>
+        <span class="item-title">Programming or open-source work</span><br>
         <span class="meta">Project name · Link</span>
       </li>
       <li>
-        <span class="item-title">Awards / fellowships</span><br>
+        <span class="item-title">Awards or fellowships</span><br>
         <span class="meta">Award name · Year</span>
-      </li>
-      <li>
-        <span class="item-title">Service</span><br>
-        <span class="meta">Department/club role · Year(s)</span>
       </li>
     </ul>
   </section>
@@ -289,7 +224,6 @@
     <h2>Curriculum Vitae</h2>
     <p>
       <a href="cv.pdf">Download my CV (PDF)</a>
-      <span class="meta">(Place <code>cv.pdf</code> in the same folder as this page.)</span>
     </p>
   </section>
 
@@ -297,9 +231,9 @@
     <h2>Contact</h2>
     <p>
       Email: <a href="mailto:nfarnsworth@colgate.edu">nfarnsworth@colgate.edu</a><br>
-      LinkedIn: <a href="#" title="Replace with your LinkedIn URL">Add link</a><br>
-      arXiv: <a href="#" title="Replace with your arXiv author page">Add link</a><br>
-      GitHub: <a href="https://github.com/njfarnsworth">njfarnsworth</a>
+      GitHub: <a href="https://github.com/njfarnsworth">njfarnsworth</a><br>
+      LinkedIn: <a href="#">Add link</a><br>
+      arXiv: <a href="#">Add link</a>
     </p>
   </section>
 

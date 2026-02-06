@@ -23,24 +23,11 @@
       color: var(--text);
     }
 
-    h1, h2 {
-      line-height: 1.25;
-    }
+    h1, h2 { line-height: 1.25; }
+    h1 { margin-bottom: 0; letter-spacing: -0.02em; }
+    h3 { margin-top: 24px; margin-bottom: 8px; }
 
-    h1 {
-      margin-bottom: 0;
-      letter-spacing: -0.02em;
-    }
-
-    h3 {
-      margin-top: 24px;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      color: var(--muted);
-      margin-top: 6px;
-    }
+    .subtitle { color: var(--muted); margin-top: 6px; }
 
     nav {
       margin: 22px 0 30px;
@@ -57,9 +44,7 @@
       white-space: nowrap;
     }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+    nav a:hover { text-decoration: underline; }
 
     section {
       margin-bottom: 42px;
@@ -67,27 +52,13 @@
       border-bottom: 1px solid var(--border);
     }
 
-    section:last-of-type {
-      border-bottom: none;
-    }
+    section:last-of-type { border-bottom: none; }
 
-    ul {
-      padding-left: 20px;
-      margin-top: 10px;
-    }
+    ul { padding-left: 20px; margin-top: 10px; }
+    li { margin-bottom: 12px; }
 
-    li {
-      margin-bottom: 12px;
-    }
-
-    .item-title {
-      font-weight: 650;
-    }
-
-    .meta {
-      color: var(--muted);
-      font-size: 0.95em;
-    }
+    .item-title { font-weight: 650; }
+    .meta { color: var(--muted); font-size: 0.95em; }
 
     footer {
       margin-top: 60px;
@@ -96,9 +67,7 @@
       text-align: center;
     }
 
-    a {
-      color: var(--link);
-    }
+    a { color: var(--link); }
   </style>
 </head>
 
@@ -127,7 +96,11 @@
     <h2>About</h2>
     <p>
       I am a fourth-year undergraduate student double majoring in Mathematics and Computer Science at Colgate University.
-      My research interests include combinatorics, logic, and experimental mathematics.
+      My interests include combinatorics, abstract algebra/logic, experimental mathematics, and applications in machine learning
+      and high-performance computing.
+    </p>
+    <p class="meta">
+      Colgate University (BA, Mathematics &amp; Computer Science), Aug 2022 – May 2026 · GPA: 3.93/4.00 · Graduating with High Honors in Mathematics
     </p>
   </section>
 
@@ -135,14 +108,32 @@
     <h2>Research</h2>
     <ul>
       <li>
-        <span class="item-title">Title of Paper or Project</span><br>
-        Short description of the problem, methods, or main results.<br>
-        <span class="meta">Advisor / collaborators · Year</span>
+        <span class="item-title">Pacific Northwest National Laboratory</span><br>
+        Math, Stats, &amp; Data Science / Research Computing (Jun 2025 – Aug 2025)<br>
+        Contributed to a mathematical framework for mechanistic interpretability in large language models and a combinatorial
+        optimization model for a nuclear nonproliferation mission; wrote HPC scripts using bash and MPI to assist a laboratory
+        cluster operating system upgrade.
       </li>
+
       <li>
-        <span class="item-title">Another Project</span><br>
-        Working paper or in progress.<br>
-        <span class="meta">Advisor / collaborators · Year</span>
+        <span class="item-title">Combinatorial Problem Solving Extended Study to Japan (Colgate Mathematics)</span><br>
+        Aug 2024 – Jan 2025<br>
+        Investigated geometric relationships between adjacency matrices of simple graphs and the Fibonacci sequence, revealing
+        conic patterns in roots of associated polynomials; traveled to Japan to present findings.
+      </li>
+
+      <li>
+        <span class="item-title">Center for Equitable Energy Transition (CEET) REU, UMass Amherst (NSF Award 2242853)</span><br>
+        Jun 2024 – Aug 2024<br>
+        Researched algorithmic bias in federated learning; evaluated bias mitigation techniques for computational intensity,
+        sustainability, and consistency, and analyzed performance limitations in practice.
+      </li>
+
+      <li>
+        <span class="item-title">Faculty Initiated Summer Research Fellowship (Colgate Mathematics)</span><br>
+        Jun 2023 – Aug 2023<br>
+        Developed a characterization of reconstructible monomial orders, including algorithms to analyze matrix structures and
+        implement key reconstructibility theorems.
       </li>
     </ul>
   </section>
@@ -153,23 +144,23 @@
     <h3>Mathematics</h3>
     <ul>
       <li>
-        <span class="item-title">Paper title (authors)</span><br>
-        <span class="meta">Journal or preprint, year.</span><br>
-        <a href="#">PDF</a> · <a href="#">arXiv</a> · <a href="#">Code</a>
+        <span class="item-title">Elimination Without Eliminating: Computing Complements of Real Hypersurfaces Using Pseudo-Witness Sets</span><br>
+        <span class="meta">P. Breiding, J. Cobb, A. Englander, N. Farnsworth, J. Hauenstein, O. Henriksson, D. Johnson, J. Lopez Garcia, D. Mundayur</span><br>
+        <span class="meta">Submitted for publication (2026) · arXiv:2601.04383</span>
       </li>
       <li>
-        <span class="item-title">Expository note title (authors)</span><br>
-        <span class="meta">Course or reading group note, year.</span><br>
-        <a href="#">PDF</a>
+        <span class="item-title">A Note on Conjectures of Gullerud, Johnson, and Mbirika</span><br>
+        <span class="meta">Robert Davis, Nayda Farnsworth</span><br>
+        <span class="meta">Submitted for publication (2025) · arXiv:2510.02008</span>
       </li>
     </ul>
 
     <h3>Interdisciplinary</h3>
     <ul>
       <li>
-        <span class="item-title">Paper title (authors)</span><br>
-        <span class="meta">Venue, year.</span><br>
-        <a href="#">PDF</a> · <a href="#">Project page</a> · <a href="#">Data / Code</a>
+        <span class="item-title">Do Neural Networks Learn Algebraic Worlds? An Investigation into the Group-theoretic Structures Learned by Narrow Models Trained to Predict Group Operations</span><br>
+        <span class="meta">H. Kvinge, A. Aguilar, N. Farnsworth, G. O’Brien, R. Jasper, S. Scullen, H. Jenne</span><br>
+        <span class="meta">Accepted to TAG-DS 2025 · arXiv:2601.21150</span>
       </li>
     </ul>
   </section>
@@ -178,12 +169,28 @@
     <h2>Teaching</h2>
     <ul>
       <li>
-        <span class="item-title">Course title</span><br>
-        <span class="meta">Role (TA / tutor / instructor) · Term</span>
+        <span class="item-title">Mathematics and Computer Science Peer Tutor</span><br>
+        <span class="meta">Colgate University Center for Learning, Teaching, and Research · Spring 2023 – Present</span>
       </li>
       <li>
-        <span class="item-title">Course title</span><br>
-        <span class="meta">Role · Term</span>
+        <span class="item-title">Discrete Structures (COSC 290)</span><br>
+        <span class="meta">Course TA, Colgate University Department of Computer Science · Fall 2025</span>
+      </li>
+      <li>
+        <span class="item-title">Applied Machine Learning (COSC 410)</span><br>
+        <span class="meta">Course Tutor, Colgate University Department of Computer Science · Spring 2025</span>
+      </li>
+      <li>
+        <span class="item-title">Linear Algebra (MATH 214)</span><br>
+        <span class="meta">Course Tutor and Grader, Colgate University Department of Mathematics · Fall 2024</span>
+      </li>
+      <li>
+        <span class="item-title">From Painting to Pixels (p5.js) (CORE 182)</span><br>
+        <span class="meta">Course Tutor, Colgate University Department of Computer Science · Fall 2024</span>
+      </li>
+      <li>
+        <span class="item-title">Intro to Computing I &amp; II (COSC 101 &amp; COSC 102)</span><br>
+        <span class="meta">Laboratory Teaching Assistant · Fall 2023 – Spring 2024</span>
       </li>
     </ul>
   </section>
@@ -192,31 +199,105 @@
     <h2>Workshops &amp; Schools</h2>
     <ul>
       <li>
-        <span class="item-title">Workshop or summer school name</span><br>
-        <span class="meta">Institution / location · Month Year</span>
+        <span class="item-title">SuperComputing 2025 (SC25)</span><br>
+        <span class="meta">St. Louis, MO · Conference participant; short course: Julia for High-Performance Computing · Nov 2025</span>
       </li>
       <li>
-        <span class="item-title">Conference or seminar series</span><br>
-        <span class="meta">Location · Month Year</span>
+        <span class="item-title">Preliminary Arizona Winter School (Virtual)</span><br>
+        <span class="meta">Course participant: Introduction to Mathematical Cryptography · Sep 2025 – Nov 2025</span>
+      </li>
+      <li>
+        <span class="item-title">GROW Columbia 2025</span><br>
+        <span class="meta">New York, NY · Conference participant · Sep 2025</span>
+      </li>
+      <li>
+        <span class="item-title">Workshop on the Applications of Commutative Algebra (Fields Institute)</span><br>
+        <span class="meta">Toronto, ON · Conference participant (Numerical Algebraic Geometry Group) · May 2025</span>
       </li>
     </ul>
   </section>
 
   <section id="activities">
     <h2>Other Activities</h2>
+
+    <h3>Presentations</h3>
     <ul>
       <li>
-        <span class="item-title">Reading group or seminar</span><br>
-        <span class="meta">Organizer or participant · Year(s)</span>
+        <span class="item-title">Nebraska Conference for Undergraduate Wisdom in Mathematics</span><br>
+        <span class="meta">Lincoln, NE · Oral presentation · Jan 2026</span><br>
+        Title: <em>Establishing an Improved Lower Bound on HJ(3, 3)</em>
       </li>
       <li>
-        <span class="item-title">Programming or open-source work</span><br>
-        <span class="meta">Project name · Link</span>
+        <span class="item-title">Osaka University Student Research Symposium</span><br>
+        <span class="meta">Osaka, Japan · Oral presentation · Jan 2025</span><br>
+        Title: <em>Connections between Tridiagonal Matrices and the Fibonacci Sequence</em>
       </li>
       <li>
-        <span class="item-title">Awards or fellowships</span><br>
-        <span class="meta">Award name · Year</span>
+        <span class="item-title">Colgate Combinatorics Research Symposium in Tokyo</span><br>
+        <span class="meta">Tokyo, Japan · Oral presentation · Jan 2025</span><br>
+        Title: <em>Connections between Tridiagonal Matrices and the Fibonacci Sequence</em>
       </li>
+      <li>
+        <span class="item-title">Nebraska Conference for Undergraduate Women in Mathematics</span><br>
+        <span class="meta">Lincoln, NE · Oral presentation · Jan 2025</span><br>
+        Title: <em>Connections between Tridiagonal Matrices and the Fibonacci Sequence</em>
+      </li>
+      <li>
+        <span class="item-title">New York Six Undergraduate Research Conference</span><br>
+        <span class="meta">Clinton, NY · Poster presentation · Nov 2024</span><br>
+        Title: <em>Optimizing Time to Fairness in Federated Learning on Resource-Constrained Devices</em>
+      </li>
+      <li>
+        <span class="item-title">UMass Summer Undergraduate Research Symposium</span><br>
+        <span class="meta">Amherst, MA · Poster presentation · Aug 2024</span><br>
+        Title: <em>Optimizing Time to Fairness in Federated Learning on Resource-Constrained Devices</em>
+      </li>
+      <li>
+        <span class="item-title">Nebraska Conference for Undergraduate Women in Mathematics</span><br>
+        <span class="meta">Lincoln, NE · Co-presenter, poster · Jan 2024</span><br>
+        Title: <em>Reconstructing Monomial Orders</em>
+      </li>
+      <li>
+        <span class="item-title">New York Six Undergraduate Research Conference</span><br>
+        <span class="meta">Geneva, NY · Co-presenter, oral presentation · Nov 2023</span><br>
+        Title: <em>Reconstructing Monomial Orders</em>
+      </li>
+      <li>
+        <span class="item-title">Colgate University Summer Research Poster Symposium</span><br>
+        <span class="meta">Hamilton, NY · Co-presenter, poster · Jul 2023</span><br>
+        Title: <em>Reconstructing Monomial Orders</em>
+      </li>
+    </ul>
+
+    <h3>Leadership &amp; Service</h3>
+    <ul>
+      <li>
+        <span class="item-title">Mathematics Club</span><br>
+        <span class="meta">President, Colgate University · Fall 2025 – Present</span>
+      </li>
+      <li>
+        <span class="item-title">Hamilton Central School Coding Club</span><br>
+        <span class="meta">Club Leader and Volunteer, Colgate University COVE · Fall 2023 – Present</span>
+      </li>
+      <li>
+        <span class="item-title">Society for Industrial and Applied Mathematics (SIAM), Colgate Chapter</span><br>
+        <span class="meta">Vice President · Fall 2023 – Present</span>
+      </li>
+      <li>
+        <span class="item-title">NCAA Division I Men’s Rowing</span><br>
+        <span class="meta">Varsity Coxswain, Colgate Men’s Rowing · Fall 2022 – Spring 2025</span>
+      </li>
+    </ul>
+
+    <h3>Awards &amp; Honors</h3>
+    <ul>
+      <li><span class="item-title">Dean’s Award with Distinction for Academic Excellence</span> <span class="meta">· Colgate University · 2022 – Present</span></li>
+      <li><span class="item-title">Graduate School Access Fund Fellow</span> <span class="meta">· Colgate University · 2025 – 2026</span></li>
+      <li><span class="item-title">George Cobb Fellows Award</span> <span class="meta">· Colgate University · 2025</span></li>
+      <li><span class="item-title">Goldwater Scholarship Nominee</span> <span class="meta">· Colgate University · 2025</span></li>
+      <li><span class="item-title">Wei Ren ’04 Endowed Scholar</span> <span class="meta">· Colgate University · 2023 – 2026</span></li>
+      <li><span class="item-title">Phi Eta Sigma National Honor Society</span> <span class="meta">· 2023 – 2026</span></li>
+      <li><span class="item-title">Empacher-IRCA Scholar-Athlete Award</span> <span class="meta">· Intercollegiate Rowing Coaches Association · 2024</span></li>
     </ul>
   </section>
 
@@ -231,6 +312,8 @@
     <h2>Contact</h2>
     <p>
       Email: <a href="mailto:nfarnsworth@colgate.edu">nfarnsworth@colgate.edu</a><br>
+      Location: Middletown, CT<br>
+      Phone: (860) 262-2930<br>
       GitHub: <a href="https://github.com/njfarnsworth">njfarnsworth</a><br>
       LinkedIn: <a href="#">Add link</a><br>
       arXiv: <a href="#">Add link</a>

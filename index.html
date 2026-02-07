@@ -29,6 +29,33 @@
 
     .subtitle { color: var(--muted); margin-top: 6px; }
 
+    /* ---------- HEADER PHOTO STYLING ---------- */
+    .hero {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .hero-photo-wrap {
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .hero-photo {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .photo-caption {
+      font-size: 0.72em;
+      color: #777;
+      margin-top: 4px;
+    }
+
     nav {
       margin: 22px 0 30px;
       padding: 12px 14px;
@@ -92,34 +119,36 @@
       </nav>
     </div>
 
-    <img
-      class="hero-photo"
-      src="website_photo.png"
-      alt="Nayda Farnsworth"
-      loading="lazy"
-    >
+    <div class="hero-photo-wrap">
+      <img
+        class="hero-photo"
+        src="website_photo.png"
+        alt="Nayda Farnsworth in Venice"
+      >
+      <div class="photo-caption">Venice, Italy. 2025.</div>
+    </div>
   </header>
+
   <section id="about">
     <h2>About</h2>
     <p>
       I am a fourth-year undergraduate student double-majoring in Mathematics and Computer Science at Colgate University.
-      My interests include combinatorics, experimental mathematics, and abstract algebra/logic. I plan to pursue a PhD in Mathematics beginning in Fall 2026.
+      My interests include combinatorics, experimental mathematics, and abstract algebra/logic.
+      I plan to pursue a PhD in Mathematics beginning in Fall 2026.
     </p>
   </section>
 
   <section id="research">
-    <h2>Upcoming and recent events</h2>
+    <h2>Upcoming and Recent Events</h2>
     <ul>
-<li>
-  On March 5, 2026, I will present my mathematics thesis work in the
-  <a href="https://sites.math.rutgers.edu/~zeilberg/expmath/"
-     target="_blank"
-     rel="noopener">
-    Rutgers Experimental Mathematics Seminar
-  </a>.
-</li>
-       <li>
-        On February 2, 2026, I was awarded High Honors in Mathematics at Colgate University based on my mathematics thesis and defense. 
+      <li>
+        On March 5, 2026, I will present my mathematics thesis work in the
+        <a href="https://sites.math.rutgers.edu/~zeilberg/expmath/" target="_blank" rel="noopener">
+          Rutgers Experimental Mathematics Seminar
+        </a>.
+      </li>
+      <li>
+        On February 2, 2026, I was awarded High Honors in Mathematics at Colgate University based on my mathematics thesis and defense.
       </li>
     </ul>
   </section>
@@ -130,12 +159,24 @@
     <h3>Mathematics</h3>
     <ul>
       <li>
-        <span class="item-title"><a href="https://arxiv.org/abs/2601.04383">Elimination Without Eliminating: Computing Complements of Real Hypersurfaces Using Pseudo-Witness Sets</a></span><br>
-        <span class="meta">P. Breiding, J. Cobb, A. Englander, N. Farnsworth, J. Hauenstein, O. Henriksson, D. Johnson, J. Lopez Garcia, D. Mundayur</span><br>
+        <span class="item-title">
+          <a href="https://arxiv.org/abs/2601.04383">
+            Elimination Without Eliminating: Computing Complements of Real Hypersurfaces Using Pseudo-Witness Sets
+          </a>
+        </span><br>
+        <span class="meta">
+          P. Breiding, J. Cobb, A. Englander, N. Farnsworth, J. Hauenstein,
+          O. Henriksson, D. Johnson, J. Lopez Garcia, D. Mundayur
+        </span><br>
         <span class="meta">Submitted for publication (2026) · arXiv:2601.04383</span>
       </li>
+
       <li>
-        <span class="item-title"><a href="https://www.arxiv.org/abs/2510.02008">A Note on Conjectures of Gullerud, Johnson, and Mbirika</a></span><br>
+        <span class="item-title">
+          <a href="https://www.arxiv.org/abs/2510.02008">
+            A Note on Conjectures of Gullerud, Johnson, and Mbirika
+          </a>
+        </span><br>
         <span class="meta">Robert Davis, Nayda Farnsworth</span><br>
         <span class="meta">Submitted for publication (2025) · arXiv:2510.02008</span>
       </li>
@@ -144,8 +185,15 @@
     <h3>Interdisciplinary</h3>
     <ul>
       <li>
-        <span class="item-title"><a href="https://www.arxiv.org/pdf/2601.21150">Do Neural Networks Learn Algebraic Worlds? An Investigation into the Group-theoretic Structures Learned by Narrow Models Trained to Predict Group Operations</a></span><br>
-        <span class="meta">H. Kvinge, A. Aguilar, N. Farnsworth, G. O’Brien, R. Jasper, S. Scullen, H. Jenne</span><br>
+        <span class="item-title">
+          <a href="https://www.arxiv.org/pdf/2601.21150">
+            Do Neural Networks Learn Algebraic Worlds? An Investigation into the Group-theoretic Structures Learned by Narrow Models Trained to Predict Group Operations
+          </a>
+        </span><br>
+        <span class="meta">
+          H. Kvinge, A. Aguilar, N. Farnsworth, G. O’Brien,
+          R. Jasper, S. Scullen, H. Jenne
+        </span><br>
         <span class="meta">Accepted to TAG-DS 2025 · arXiv:2601.21150</span>
       </li>
     </ul>
@@ -153,23 +201,23 @@
     <h3>In Progress</h3>
     <ul>
       <li>
-        <span class="item-title">Reconstructing Monomial Orders</a></span><br>
-        <span class="meta">N. Farnsworth, P. Horoszewski, A. Pal, G. Sosa Castillo, M. Zarcone</span><br>
+        <span class="item-title">Reconstructing Monomial Orders</span><br>
+        <span class="meta">
+          N. Farnsworth, P. Horoszewski, A. Pal, G. Sosa Castillo, M. Zarcone
+        </span>
       </li>
     </ul>
-    
   </section>
 
-<section id="teaching">
-  <h2>Teaching Assistant at Colgate</h2>
-  <ul>
-    <li>Discrete Structures (Fall 2025)</li>
-    <li>Applied Machine Learning (Spring 2025)</li>
-    <li>Linear Algebra (Fall 2024)</li>
-    <li>From Painting to Pixels – p5.js (Fall 2024)</li>
-    <li>Intro to Computing I &amp; II (Fall 2023 – Spring 2024)</li>
-  </ul>
-</section>
+  <section id="teaching">
+    <h2>Teaching Assistant at Colgate</h2>
+    <ul>
+      <li>Discrete Structures (Fall 2025)</li>
+      <li>Applied Machine Learning (Spring 2025)</li>
+      <li>Linear Algebra (Fall 2024)</li>
+      <li>From Painting to Pixels – p5.js (Fall 2024)</li>
+      <li>Intro to Computing I &amp; II (Fall 2023 – Spring 2024)</li>
+    </ul>
   </section>
 
   <section id="workshops">
@@ -180,17 +228,29 @@
         <span class="meta">St. Louis, MO · Short course: Julia for High-Performance Computing · Nov 2025</span>
       </li>
       <li>
-        <span class="item-title"><a href="https://swc-math.github.io/aws/2026/2026PAWS.html">Preliminary Arizona Winter School </a></span><br>
-        <span class="meta">Virtual, Course participant: Introduction to Mathematical Cryptography · Sep 2025 – Nov 2025</span>
+        <span class="item-title">
+          <a href="https://swc-math.github.io/aws/2026/2026PAWS.html">
+            Preliminary Arizona Winter School
+          </a>
+        </span><br>
+        <span class="meta">Virtual · Introduction to Mathematical Cryptography · Sep–Nov 2025</span>
       </li>
       <li>
-        <span class="item-title"><a href="https://grow2025.math.columbia.edu/">GROW Columbia 2025</a></span><br>
-        <span class="meta">New York, NY · Graduate School Preparation Conference Participant · Sep 2025</span>
+        <span class="item-title">
+          <a href="https://grow2025.math.columbia.edu/">GROW Columbia 2025</a>
+        </span><br>
+        <span class="meta">New York, NY · Graduate School Preparation Conference · Sep 2025</span>
       </li>
-        <span class="item-title">Pacific Northwest National Laboratory</a></span><br>
-        <span class="meta">Richland, WA· High-Performance Computing Bootcamp · Jun - Aug 2025</span>
       <li>
-        <span class="item-title"><a href="http://www.fields.utoronto.ca/activities/24-25/commutative-algebra-applications">Workshop on the Applications of Commutative Algebra at the Fields Institute </a></span><br>
+        <span class="item-title">Pacific Northwest National Laboratory</span><br>
+        <span class="meta">Richland, WA · High-Performance Computing Bootcamp · Jun–Aug 2025</span>
+      </li>
+      <li>
+        <span class="item-title">
+          <a href="http://www.fields.utoronto.ca/activities/24-25/commutative-algebra-applications">
+            Workshop on the Applications of Commutative Algebra at the Fields Institute
+          </a>
+        </span><br>
         <span class="meta">Toronto, ON · Numerical Algebraic Geometry Group · May 2025</span>
       </li>
     </ul>
@@ -259,13 +319,12 @@
         <span class="meta">Club Leader and Volunteer, Colgate University COVE · Fall 2023 – Present</span>
       </li>
     </ul>
-
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
     <p>
-      Email: <a href="mailto:nfarnsworth@colgate.edu">nfarnsworth@colgate.edu</a><br>
+      Email: <a href="mailto:nfarnsworth@colgate.edu">nfarnsworth@colgate.edu</a>
     </p>
   </section>
 

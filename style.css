@@ -54,8 +54,9 @@ h3 {
 }
 
 .hero-photo {
-  width: 105px;
+  width: 130px;
   height: auto;
+  border-radius: 8px;
 }
 
 .photo-caption {
@@ -120,6 +121,39 @@ li {
   font-size: 0.95em;
 }
 
+/* Teaching and Service page */
+.teaching-service-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 16px;
+}
+
+.teaching-service-list li {
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-soft);
+}
+
+.teaching-service-list .item-title {
+  font-weight: normal;
+}
+
+.teaching-service-list a.item-title {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.teaching-service-list a.item-title:hover {
+  text-decoration: underline;
+}
+
+.teaching-service-list .meta {
+  display: block;
+  margin-top: 4px;
+}
+
 footer {
   margin-top: 60px;
   font-size: 0.9em;
@@ -141,7 +175,7 @@ a {
   }
 
   .hero-photo {
-    width: 100px;
+    width: 115px;
   }
 
   nav {

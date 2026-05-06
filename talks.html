@@ -21,7 +21,7 @@
     <nav>
       <a href="index.html">About</a>
       <a href="papers.html">Papers</a>
-      <a href="talks.html" class="active">Talks</a>
+      <a href="talks.html">Talks</a>
       <a href="teaching-service.html">Teaching &amp; Service</a>
       <a href="workshops.html">Activities</a>
       <a href="contact.html">Contact</a>
@@ -122,6 +122,18 @@
 <footer>
   © 2026 Nayda Farnsworth
 </footer>
+
+<script>
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll("nav a").forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
 
 </body>
 </html>

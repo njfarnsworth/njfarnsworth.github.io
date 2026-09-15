@@ -1,9 +1,9 @@
 :root {
-  --text: #111;
-  --muted: #555;
-  --link: #0000cc;
+  --text: #000;
+  --muted: #444;
+  --link: #0000ee;
   --visited: #551a8b;
-  --border: #999;
+  --rule: #777;
   --bg: #fff;
 }
 
@@ -12,99 +12,118 @@ html {
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  max-width: 720px;
-  margin: 32px auto;
-  padding: 0 18px;
-  line-height: 1.5;
+  font-family: "Times New Roman", Times, serif;
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 16px;
   color: var(--text);
   background: var(--bg);
+  line-height: 1.45;
+  font-size: 17px;
 }
 
 h1,
 h2,
 h3 {
+  font-family: "Times New Roman", Times, serif;
   font-weight: normal;
-  line-height: 1.2;
+  color: #000;
 }
 
 h1 {
-  font-size: 2em;
-  margin: 0 0 6px;
+  font-size: 2.1rem;
+  margin: 0 0 4px;
 }
 
 h2 {
-  font-size: 1.4em;
-  margin-top: 28px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 3px;
+  font-size: 1.35rem;
+  margin: 26px 0 10px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--rule);
 }
 
 h3 {
-  font-size: 1.1em;
-  margin-top: 22px;
-  margin-bottom: 6px;
+  font-size: 1.1rem;
 }
 
 .subtitle {
+  margin: 0;
   color: var(--muted);
-  margin-top: 0;
+  font-style: italic;
 }
 
 .hero {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 24px;
   margin-bottom: 24px;
 }
 
+.hero-text {
+  flex: 1;
+}
+
 .hero-photo-wrap {
-  text-align: center;
   flex-shrink: 0;
+  text-align: center;
 }
 
 .hero-photo {
-  width: 135px;
+  width: 145px;
   height: auto;
-  border: 1px solid #777;
+  border: 1px solid #666;
 }
 
 .photo-caption {
-  font-size: 0.75em;
+  margin-top: 3px;
+  font-size: 0.75rem;
   color: var(--muted);
-  margin-top: 4px;
 }
 
 nav {
-  margin: 18px 0 28px;
-  padding: 8px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  margin-top: 16px;
+  padding: 7px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
 }
 
 nav a {
-  margin-right: 14px;
+  display: inline;
+  margin-right: 12px;
+  padding: 0;
   color: var(--link);
+  background: none;
+  border: none;
+  border-radius: 0;
   text-decoration: underline;
-  white-space: nowrap;
 }
 
 nav a:hover {
+  background: none;
+  color: var(--link);
   text-decoration: none;
 }
 
 nav a.active {
+  background: none;
+  color: #000;
   font-weight: bold;
-  color: var(--text);
+  text-decoration: none;
 }
 
 section {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+  padding: 0;
+  border: none;
+}
+
+p {
+  margin-top: 0;
 }
 
 ul {
-  padding-left: 24px;
+  padding-left: 22px;
   margin-top: 8px;
 }
 
@@ -112,18 +131,8 @@ li {
   margin-bottom: 7px;
 }
 
-.item-title {
-  font-weight: bold;
-}
-
-.meta {
-  color: var(--muted);
-  font-size: 0.9em;
-}
-
 a {
   color: var(--link);
-  text-decoration: underline;
 }
 
 a:visited {
@@ -131,34 +140,29 @@ a:visited {
 }
 
 footer {
-  margin-top: 48px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border);
-  font-size: 0.85em;
+  margin-top: 42px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
   color: var(--muted);
   text-align: left;
 }
 
 @media (max-width: 700px) {
   body {
-    margin: 20px auto;
+    margin: 18px auto;
   }
 
   .hero {
     flex-direction: column;
-    gap: 12px;
   }
 
   .hero-photo {
-    width: 120px;
+    width: 125px;
   }
 
   nav a {
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
-}
-
-body {
-  background: yellow !important;
 }

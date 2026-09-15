@@ -6,9 +6,9 @@
 
 body {
   font-family: "Times New Roman", Times, serif;
-  max-width: 750px;
-  margin: 30px auto;
-  padding: 0 20px;
+  max-width: 1100px;
+  margin: 30px 40px;
+  padding: 0;
   line-height: 1.4;
   color: var(--text);
   background: white;
@@ -138,7 +138,7 @@ footer {
 
 @media (max-width: 700px) {
   body {
-    margin: 20px auto;
+    margin: 20px;
   }
 
   .hero {

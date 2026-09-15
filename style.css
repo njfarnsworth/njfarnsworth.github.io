@@ -1,63 +1,48 @@
 :root {
   --text: #000;
-  --muted: #444;
+  --muted: #555;
   --link: #0000ee;
-  --visited: #551a8b;
-  --rule: #777;
-  --bg: #fff;
-}
-
-html {
-  background: var(--bg);
 }
 
 body {
   font-family: "Times New Roman", Times, serif;
-  max-width: 760px;
-  margin: 24px auto;
-  padding: 0 16px;
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 0 20px;
+  line-height: 1.4;
   color: var(--text);
-  background: var(--bg);
-  line-height: 1.45;
-  font-size: 17px;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Times New Roman", Times, serif;
-  font-weight: normal;
-  color: #000;
+  background: white;
 }
 
 h1 {
-  font-size: 2.1rem;
-  margin: 0 0 4px;
+  font-size: 2em;
+  margin: 0 0 5px;
 }
 
 h2 {
-  font-size: 1.35rem;
-  margin: 26px 0 10px;
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--rule);
+  font-size: 1.4em;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.15em;
+  margin-top: 20px;
+  margin-bottom: 7px;
 }
 
 .subtitle {
-  margin: 0;
-  color: var(--muted);
-  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: var(--text);
 }
 
 .hero {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 24px;
+  gap: 25px;
+  margin-bottom: 20px;
 }
 
 .hero-text {
@@ -70,60 +55,59 @@ h3 {
 }
 
 .hero-photo {
-  width: 145px;
+  width: 150px;
   height: auto;
-  border: 1px solid #666;
 }
 
 .photo-caption {
-  margin-top: 3px;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   color: var(--muted);
+  margin-top: 3px;
 }
 
 nav {
-  margin-top: 16px;
-  padding: 7px 0;
-  border-top: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
+  margin-top: 15px;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 nav a {
   display: inline;
   margin-right: 12px;
   padding: 0;
-  color: var(--link);
-  background: none;
   border: none;
-  border-radius: 0;
+  background: none;
+  color: var(--link);
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 nav a:hover {
   background: none;
-  color: var(--link);
   text-decoration: none;
 }
 
 nav a.active {
   background: none;
-  color: #000;
+  color: var(--text);
   font-weight: bold;
   text-decoration: none;
 }
 
 section {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   padding: 0;
   border: none;
 }
 
 p {
   margin-top: 0;
+  margin-bottom: 12px;
 }
 
 ul {
-  padding-left: 22px;
+  padding-left: 25px;
   margin-top: 8px;
 }
 
@@ -131,26 +115,30 @@ li {
   margin-bottom: 7px;
 }
 
-a {
-  color: var(--link);
+.item-title {
+  font-weight: bold;
 }
 
-a:visited {
-  color: var(--visited);
+.meta {
+  color: var(--muted);
+  font-size: 0.95em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
 }
 
 footer {
-  margin-top: 42px;
-  padding-top: 8px;
-  border-top: 1px solid var(--rule);
-  font-size: 0.85rem;
+  margin-top: 35px;
+  font-size: 0.85em;
   color: var(--muted);
   text-align: left;
 }
 
 @media (max-width: 700px) {
   body {
-    margin: 18px auto;
+    margin: 20px auto;
   }
 
   .hero {
@@ -158,7 +146,7 @@ footer {
   }
 
   .hero-photo {
-    width: 125px;
+    width: 130px;
   }
 
   nav a {
